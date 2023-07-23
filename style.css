@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --text-design: 'roboto'
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    width: 100vw;
+    display: inline-grid;
+    grid-template: 50px 50px 50px 50px / 20% 40% 40%;
+}
+
+.sidebar{
+    position: fixed;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: #0891b2;
+    color: white;
+    height: 100vh;
+    width: 273px;
+    font-family: var(--text-design);
+}
+
+.sidebar .dashname{
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .dashname > div{
+    align-items: center;
+}
+
+.sidebar .dashname .dashimg{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.sidebar .dashtabs{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.sidebar .dashtabs > div{
+    margin-bottom: 10px;
+}
+
+.sidebar .dashtabs img{
+    height: 30px;
+    width: 30px;
+    background-color: none;
+    margin: 10px;
+    background: none;
+}
+
+.sidebar .dashset{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.sidebar .dashset > div{
+    margin-bottom: 10px;
+}
+
+.sidebar .dashset img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background: none;
+}
+
+.sidebar .dashset .dash, .sidebar .dashtabs .dash{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.heading{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: fit-content;
+    background-color: white;
+}
+
+.heading .head1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.heading .head1 .searchbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.heading .head1 .searchbar img{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.heading .head1 .searchbar input{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(191, 196, 201);
+    padding: 5px;
+}
+
+.heading .head1 .head1_2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.heading .head1 .head1_2 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin: 0px 20px;
+}
+
+.heading .head1 .head1_2 #userimg{
+    height: 30px;
+    width: 30px;
+}
+
+.heading .head1 .head1_2 .name{
+    font-family: var(--text-design);
+    font-weight: bolder;
+    border: none;
+}
+
+.heading .head2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+.heading .head2 .head2_2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading .head2 .head2_2 img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.heading .head2 .head2_3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px;
+    font-family: var(--text-design);
+    font-weight: bolder;
+    border: none;
+}
+
+.heading .head2 .head2_3 p{
+    font-size: 10px;
+}
+
+.heading .head2 .head2_3 .userid{
+    font-size: 20px;
+}
+
+.heading .head2 .headbutton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.heading .head2 .headbutton button{
+    border-radius: 20px;
+    color: white;
+    background-color: #0891b2;
+    border: none;
+    font-family: var(--text-design);
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+}
+
+.content{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: rgb(191, 196, 201);
+    height: fit-content;
+    font-family: var(--text-design);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.content .maincontent{
+    width: 70%;
+    height: fit-content;
+}
+
+.content .maincontent p{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.content .maincontent .protitles{
+    display: inline-grid;
+    grid-template-rows: repeat(3, fit-content);
+    grid-template-columns: repeat(2, 260px);
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content .maincontent .protitles .protitle{
+    background-color: white;
+    border-radius: 10px;
+    border-left: solid 5px green;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content .maincontent .protitles .protitle h6{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.content .maincontent .protitles .protitle p{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-bottom: 35px;
+    color: gray;
+}
+
+.content .maincontent .protitles .protitle .symbols{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.content .maincontent .protitles .protitle .symbols img{
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.content .subcontent{
+    width: 30%;
+}
+
+.content .subcontent .announcement p{
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.content .subcontent .announcement .anntablet{
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 280px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content .subcontent .announcement .anntablet .anntab{
+    font-family: var(--text-design);
+}
+
+.content .subcontent .announcement .anntablet .anntab h6{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.content .subcontent .announcement .anntablet .anntab p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.content .subcontent .announcement .anntablet #line{
+    width: 200px;
+    border: solid thin gray;
+    align-items: self-end;
+    margin-left: 20px;
+}
+
+.content .subcontent .trending{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content .subcontent .trending #head{
+    margin-bottom: 10px;
+    font-family: var(--text-design);
+    font-weight: bolder;
+}
+
+.content .subcontent .trending .trentablet{
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content .subcontent .trending .trentablet .trentab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content .subcontent .trending .trentablet .trentab img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin: 15px;
+}
+
+.content .subcontent .trending .trentablet .trentab .trentabdetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+}

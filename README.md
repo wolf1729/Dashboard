@@ -1,0 +1,1 @@
+This is dashboard design made using pure HTML and CSS
